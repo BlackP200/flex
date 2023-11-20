@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+    transition: 0.5s ease-in-out;
+    font-family: 'Public Sans' sans-serif;
+}
+
+:root {
+    --bg-section: #1B262F;
+    --bg-btn: #BA4270;
+    --bg-body: #EDF3F8;
+    --main-color: #365368;
+}
+
+body {
+    background-color: var(--bg-body);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 0;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    padding: 40px 100px;
+    background-color: var(--bg-body);
+}
+
+input {
+    background-color: white;
+    padding: 16px 174.5px 14px 26.5px;
+    border: transparent;
+    border-radius: 30px;
+    width: 445px;
+}
+
+h2 {
+    font-size: 48px;
+    font-family: 'DM Serif Display';
+}
+
+p a {
+    font-weight: 700;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+} 
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin: 0 165px;
+    color: var(--main-color);
+}
+
+.left {
+    width: 546px;
+}
+
+.left h1 {
+    font-size: 72px;
+    font-weight: 400;
+    font-family: 'DM Serif Display';
+}
+
+.left p {
+    margin-left: 27px;
+}
+
+.left .enter-input {
+    margin-top: 31px;
+    margin-bottom: 16px;
+}
+
+.enter-input {
+    position: relative;
+    width: 445px;
+}
+
+.enter-input button {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.right img {
+    margin-top: 70px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-section);
+    color: white;
+    padding: 80px 150px;
+}
+
+.info-left {
+    width: 445px;
+}
+
+.info-left p {
+    margin: 24px 0;
+}
+
+.info-right {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 62px;
+    width: 550px;
+}
+.info-btn {
+    padding: 16px 24.5px 14px 26.5px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+.extra-one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+}
+
+.extra-one-right {
+    width: 500px;
+}
+
+.extra-one-right p {
+    margin: 24px 0;
+}
+
+.extra-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+}
+
+.extra-two-left {
+    width: 600px;
+}
+
+.extra-two-left p {
+    margin: 24px 0;
+}
+
+.extra-two-right img:nth-child(1) {
+    margin-right: -110px;
+}
+
+.choose {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.choose div {
+    color: var(--main-color);
+    text-align: center;
+    width: 300px;
+}
+
+.choose div h3 {
+    margin: 20px 0;
+}
+
+.ready {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 80px 120px;
+    font-size: 28px;
+    color: var(--main-color);
+}
+
+.ready h1 {
+    font-family: 'DM Serif Display';
+}
+
+footer {
+    font-size: 18px;
+    font-weight: 700;
+    background-color: var(--bg-section);
+    color: var(--bg-body);
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-left ul {
+    display: flex;
+    gap: 30px;
+    margin-left: 40px;
+}
+
+.footer-right img {
+    margin: 0 10px;
+}
+
+.primary-btn {
+    background: var(--bg-btn);
+    border-radius: 30px;
+    padding: 16px 24.5px 14px 26.5px;
+    color: white;
+    border: 1px solid transparent;
+    font-weight: 700;
+}
+
+.primary-btn:hover {
+    border: 2px solid var(--bg-btn);
+    color: var(--bg-btn);
+    background: transparent;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 40px 30px;
+        justify-content: space-around;
+    }
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+    .container {
+        width: 100%;
+    }
+    .main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap-reverse; 
+        text-align: center;
+        margin-top: 60px;
+    }
+    .left {
+        margin-bottom: 96px;
+    }
+    .left h1 {
+        font-size: 48px;
+        font-weight: 400;
+    }
+    .enter-input {
+        display: flex;
+        width: 100%;
+    }
+    .info {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        text-align: center;
+        padding: 70px 100px;
+    }
+    .info-left {
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .info-right {
+        gap: 37px;
+    }
+    .extra-one {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .extra-one-right {
+        text-align: center;
+    }
+    .extra-two {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .extra-two-left {
+        text-align: center;
+    }
+    .choose div {
+        width: 240px;
+    }
+    .ready h1 {
+        margin: 20px auto;
+    }
+    footer {
+        font-size: 18px;
+        font-weight: 700;
+        background-color: var(--bg-section);
+        color: var(--bg-body);
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 20px;
+    }
+    
+    .footer-left {
+        display: flex;
+        align-items: center;
+    }
+    
+    .footer-left ul {
+        display: flex;
+        gap: 30px;
+        margin-left: 40px;
+    }
+    
+    .footer-right img {
+        margin: 0 10px;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    nav {
+        padding: 40px 0;
+        justify-content: space-around;
+    }
+    nav ul {
+        display: none;
+    }
+    .container {
+        width: 100%;
+    }
+    .main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap-reverse; 
+        text-align: center;
+        margin-top: 60px;
+        margin: 0 120px;
+    }
+    .left {
+        width: 300px;
+    }
+    .left h1 {
+        font-size: 32px;
+        font-weight: 400;
+    }
+    .enter-input {
+        display: flex;
+        width: 100%;
+    }
+    .right img {
+        width: 228px;
+        height: 400px;
+    }
+    input {
+        width: 307px;
+    }
+    .enter-input {
+        position: inherit;
+        padding: 0 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .enter-input button {
+        position: inherit;
+        margin: 16px 0;
+        padding: 20px 95px;
+    }
+    .left p {
+        margin: 0;
+    }
+    .left {
+        margin-bottom: 96px;
+    }
+    .left h1 {
+        font-size: 28px;
+        font-weight: 400;
+    }
+    .enter-input {
+        display: flex;
+        width: 100%;
+    }
+    .info {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        text-align: center;
+        padding: 70px 30px;
+    }
+    .info-left {
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .info-left h2 {
+        font-size: 32px;
+    }
+    .info-right {
+        gap: 17px;
+        row-gap: 40px;
+    }
+    .extra-one {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .extra-one-right {
+        text-align: center;
+        width: 90%;
+    }
+    .extra-one-right h2 {
+        font-size: 32px;
+    }
+    .extra-one-left img {
+        width: 320px;
+        height: 320px;
+    }
+    .extra-two {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .extra-two-left {
+        text-align: center;
+        width: 90%;
+    }
+    .extra-two-left h2 {
+        font-size: 32px;
+    }
+    .extra-two-right img {
+        width: 220px;
+        height: 250px;
+    }
+    .choose div {
+        width: 300px;
+        margin: 40px 0;
+    }
+    .ready {
+        padding: 30px 0;
+    }
+    .ready h1 {
+        font-size: 25px;
+    }
+    .enter-input {
+        padding: 0;
+    }
+    .enter-input a button {
+        padding: 20px 90px;
+    }
+    .ready .enter-input a button {
+        padding: 20px 90px;
+    }
+    footer {
+        display: block;
+    }
+    .footer-left {
+        display: block;
+        text-align: center;
+    }
+    .footer-left ul {
+        display: block;
+        margin-left: 0;
+        margin: 40px 0;
+    }
+    .footer-left ul li {
+        margin-bottom: 20px;
+    }
+    .footer-right {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .extra-two-right img {
+        width: 200px;
+        height: 230px;
+    }
+    .info-left h2 {
+        font-size: 25px;
+    }
+    .info {
+        padding: 40px 15px;
+    }
+    .info-right {
+        gap: 1px;
+        row-gap: 30px;
+    }
+}
+
